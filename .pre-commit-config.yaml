@@ -34,7 +34,7 @@ repos:
       rev: 5.12.0
       hooks:
           - id: isort
-            args: ['--profile', 'black', --line-length=80]
+            args: ['--profile', 'black', '--line-length=80']
 
     - repo: https://github.com/psf/black
       rev: 23.3.0
@@ -62,3 +62,4 @@ repos:
             entry: mypy
             language: system
             types: [python]
+            plugins: -mypy_drf_plugin_main
